@@ -1,0 +1,23 @@
+[project]
+name = "doc_reader"
+version = "0.1.0"
+description = "doc-reader using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "crewai[tools]>=0.95.0,<1.0.0"
+]
+
+[project.scripts]
+doc_reader = "doc_reader.main:run"
+run_crew = "doc_reader.main:run"
+train = "doc_reader.main:train"
+replay = "doc_reader.main:replay"
+test = "doc_reader.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"

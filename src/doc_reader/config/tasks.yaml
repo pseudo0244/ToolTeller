@@ -1,0 +1,34 @@
+input_tool_task:
+  description: >
+    Process the provided input data, ensuring it is in the right format for the next steps.
+  expected_output: >
+    A structured and formatted input ready for document processing.
+  agent: input_tool
+
+doc_surf_task:
+  description: >
+    Surf the web for the latest documents, articles, or updates that are relevant to the tool.
+  expected_output: >
+    A list of links and content snippets from the most relevant documents found.
+  agent: doc_surfer
+
+doc_summary_task:
+  description: >
+    Summarize the documents gathered in the previous task into concise insights.
+  expected_output: >
+    A set of clear, concise summaries extracted from the documents, highlighting key points.
+  agent: doc_summary
+
+update_summary_task:
+  description: >
+    Process and summarize the most recent updates from various sources.
+  expected_output: >
+    A summary of the latest updates from documents, with the most current changes highlighted.
+  agent: update_summary
+
+file_write_task:
+  description: >
+    Write the generated summaries and insights to a markdown file for storage or sharing.
+  expected_output: >
+    A markdown file containing the summaries of the documents or updates, saved in a structured format.
+  agent: file_writer
