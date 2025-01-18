@@ -1,4 +1,4 @@
-User name is John Doe.
-User is an AI Engineer.
+User name is Harshith.
+User is a Student.
 User is interested in AI Agents.
-User is based in San Francisco, California.
+User is based in Bangalore, India.
